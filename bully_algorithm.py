@@ -53,16 +53,12 @@ def set_fail_identifier(fail_identifier):
     print("process ",fail_identifier,"identifies the failure")
     return(fail_identifier)
 
-                                         
-
-
 process_id = [int(-1)]*n                             
 for i in range(n):
     process_id[i]=i
                     
 alive = [int(1)]*n                                   
 global_coordinator = max(process_id)
-
 
 kill(global_coordinator)
 backtolife(5)
